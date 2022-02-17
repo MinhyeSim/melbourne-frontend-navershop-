@@ -3,9 +3,6 @@ const Bmi =()=>{
     return <><h1>Bmi폼</h1>
     <form>
         <div>
-        </div>
-
-        <div>
             <label><b>name</b></label>
             <input type=""/><br/>
 
