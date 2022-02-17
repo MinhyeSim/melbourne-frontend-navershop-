@@ -1,22 +1,22 @@
 import React from "react";
-const Calc =()=>{
-    return <><h1>Calc폼</h1>
+import Layout from "../containers/Layout";
+
+export default function Calc (){
+    return <Layout><h1>Calc폼</h1>
     <form>
        
+    <div>
+    <label><b>num1</b></label>
+    <input type=""/><br/>
 
-        <div>
-            <label><b>num1</b></label>
-            <input type=""/><br/>
+    <label><b>opcode</b></label>
+    <input type=""/><br/>
 
-            <label><b>opcode</b></label>
-            <input type=""/><br/>
-
-            <label><b>num2</b></label>
-            <input type=""/><br/>
+    <label><b>num2</b></label>
+    <input type=""/><br/>
     
-        </div>
+    </div>
     </form>
-    </>
+    </Layout>
 }
 
-export default Calc

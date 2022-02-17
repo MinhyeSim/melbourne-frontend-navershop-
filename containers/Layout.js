@@ -1,15 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from "./Footer";
+import Header from "./Header";
 
-const Layout =()=>{
+export default function Layout ({children}){
     return (<div>
         <Table>
+            <thead>
             <Tr>
-                <Td></Td>
+                <Td><Header/></Td>
+            </Tr>
+            </thead>
+            <tbody>
+            <Tr>
+                <Td>
+                    {children}
+                    </Td>
             </Tr>
             <Tr>
-                <Td></Td>
+                <Td><Footer/></Td>
             </Tr>
+            </tbody>
+            
         </Table>        
         </div>)
 }
@@ -27,4 +39,3 @@ const Th = styled.th`
 const Td = styled.td`
     border : 1px dotted black
 `
-export default Layout
