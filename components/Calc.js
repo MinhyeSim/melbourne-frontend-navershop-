@@ -38,7 +38,7 @@ export default function Calc (){
     <label htmlFor=""><b>num2</b></label>
     <input id = "num2" type="" /><br/>
     <button onClick={()=>{setNum1(document.getElementById('num1').value)}}>숫자1 결정</button>
-    <button onClick={()=>{setNum2(document.getElementById('num2').value)}}>숫자2 결정</button>
+    <button onClick={(mb)=>{setNum2(document.getElementById('num2').value)}}>숫자2 결정</button>
     <button onClick={()=>{sum()}}>더하기 실행</button>
     <div>결과: {num1} + {num2} = {result}</div>
     
